@@ -10,7 +10,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Component(immediate = true, service = Endpoint.class)
-@ServerEndpoint(value="/websocket/sample", encoders = {FigureEncoder.class}, decoders = {FigureDecoder.class})
+@ServerEndpoint(value="/sample", encoders = {FigureEncoder.class}, decoders = {FigureDecoder.class})
 public class MyWhiteboard extends Endpoint {
     private static Set<Session> peers = Collections.synchronizedSet(new HashSet<>());
 

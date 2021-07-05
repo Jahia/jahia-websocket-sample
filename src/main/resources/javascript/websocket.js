@@ -1,5 +1,5 @@
 window.addEventListener("DOMContentLoaded", (event) => {
-    let wsUri = "ws://" + window.location.host + "/websocket/sample";
+    let wsUri = "ws://" + window.location.host + "/modules/sample";
     let websocket = new WebSocket(wsUri);
     websocket.onerror = function(evt) { onError(evt) };
     websocket.onopen = function(evt) { onOpen(evt) };
